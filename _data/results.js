@@ -57,7 +57,7 @@ const extractCompanyResultsByTestType = results => {
                   const count = testResults[company]?.[state] || 0;
                   return {...allStates, [state]: previousCount + count};
                 }, {}) :
-              testResults[companyName];
+              testResults[company];
           });
           return all;
         }, {});
